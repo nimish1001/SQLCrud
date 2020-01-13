@@ -22,6 +22,7 @@ public class UpdateActivity extends AppCompatActivity {
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DbHandler db = MainActivity.db;
                 String r = etupdateRno.getText().toString();
                 if(r.length()==0){
                     etupdateRno.setError("rno is empty");
@@ -36,8 +37,7 @@ public class UpdateActivity extends AppCompatActivity {
                     return;
                 }
 
-                MainActivity.db.updateStudent(Integer.parseInt(r),name);
-                
+                db.UpdateStudent(Integer.parseInt(r),name);
             }
         });
     }
