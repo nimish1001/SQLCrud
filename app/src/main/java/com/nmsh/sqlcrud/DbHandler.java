@@ -31,7 +31,7 @@ public class DbHandler extends SQLiteOpenHelper {
 
         ContentValues cv =  new ContentValues();
         cv.put("rno ",rno);
-        cv.put("name",name);
+        cv.put("name ",name);
         long id =db.insert("student",null,cv);
         if(id>0){
             Toast.makeText(context,"Record Added",Toast.LENGTH_SHORT);
@@ -49,7 +49,7 @@ public class DbHandler extends SQLiteOpenHelper {
             do{
                 String rno =c.getString(0);
                 String name = c.getString(1);
-                sb.append("rno " + rno + "name " + name + "\n");
+                sb.append("rno " + rno + " name " + name + "\n");
             }while (c.moveToNext());
 
         }

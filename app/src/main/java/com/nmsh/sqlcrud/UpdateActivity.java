@@ -32,7 +32,7 @@ public class UpdateActivity extends AppCompatActivity {
                 String name = etUpdateName.getText().toString();
 
                 if(name.length()<=2){
-                    etUpdateName.setError("rno is empty");
+                    etUpdateName.setError("Name is empty");
                     etUpdateName.requestFocus();
                     return;
                 }
