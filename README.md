@@ -3,7 +3,7 @@ CRUD connectivity for SQLite on Android.
 
 This android application helps you to store your data on SQLite Database.
 
-## Screenshots
+#### Screenshots
 Home Activity
 ![](images/https://github.com/nimish1001/SQLCrud/blob/master/images/1.jpeg)
 
